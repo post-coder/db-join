@@ -1,0 +1,6 @@
+1)
+SELECT `students`.*, `degrees`.name AS `degree_name`
+FROM `students`
+INNER JOIN `degrees`
+ON `students`.`degree_id` = `degrees`.`id`  
+WHERE `students`.`degree_id` = 53;
